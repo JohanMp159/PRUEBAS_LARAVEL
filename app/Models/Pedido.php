@@ -30,10 +30,10 @@ class Pedido{
                     return "El precio no puede ser inferior a cero";
                 }
                 else if($cantidad > 0 && $cantidad <= 100){
-                $descuento = 0.05;
+                    $descuento = 0.05;
                 }
-                else if($cantidad >100 && $cantidad <= 500){
-                $descuento = 0.10;
+                else if($cantidad > 100 && $cantidad <= 500){
+                    $descuento = 0.10;
                 }
                 else{
                     $descuento = 0.125;
