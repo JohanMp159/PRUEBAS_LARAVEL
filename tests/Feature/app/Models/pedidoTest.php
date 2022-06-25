@@ -33,7 +33,7 @@ class pedidoTest extends TestCase
 
         $pedido = new Pedido();
         $resultado = $pedido->calcularDescuento($idPedido, $idProducto, $cantidad, $precio);
-        $this->assertEquals("La cantidad no puede ser inferior a cero", $resultado);
+        $this->assertEquals("El precio no puede ser inferior o igual a cero", $resultado);
        
     }
 
@@ -47,7 +47,7 @@ class pedidoTest extends TestCase
 
         $pedido = new Pedido();
         $resultado = $pedido->calcularDescuento($idPedido, $idProducto, $cantidad, $precio);
-        $this->assertEquals("El precio no puede ser inferior a cero", $resultado);
+        $this->assertEquals("El precio no puede ser inferior o igual a cero", $resultado);
        
     }
 
